@@ -1,0 +1,315 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Questrial&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            font-family: 'Questrial', sans-serif;
+            ;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Cabin', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .body-wraper {
+            display: flex;
+            height: auto;
+            width: 800px;
+            margin: 0 auto;
+            border: 5px solid #000;
+            border-style: inset;
+            border-radius: 5px;
+            box-shadow: 1px 4px 5px -41px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 1px 4px 5px -41px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 1px 4px 5px -41px rgba(0, 0, 0, 0.75);
+        }
+
+        .side-bar {
+            color: #fff;
+            flex: 5;
+            height: 100%;
+        }
+
+
+
+        .header,
+        .contact {
+            background-color: #3b3a3a;
+            padding: 8px 13px;
+        }
+
+        .contact,
+        .education {
+            line-height: 1.6rem;
+            overflow: hidden;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: rgba(255, 255, 255, .9)
+        }
+
+        .header h2 {
+            font-size: 1.2rem;
+            display: flex;
+            color: rgba(255, 255, 255, 1);
+            text-transform: capitalize;
+            font-weight: 100;
+        }
+
+        .header li {
+            list-style-type: none;
+            margin: 5px;
+            font-size: 1rem;
+            font-weight: 200;
+            color: rgba(255, 255, 255, .9)
+        }
+
+        .socialIcon:nth-child(odd) {
+
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 13px;
+        }
+
+        .education,
+        .skill {
+            background-color: #f4f2f2;
+            color: #000;
+            padding: 8px 13px;
+        }
+
+        .education h2,
+        h3 {
+            margin: 5px 0;
+            overflow: hidden;
+        }
+
+        .education-recent p:nth-child(1) {
+            font-weight: bold;
+        }
+
+        .courses li {
+            list-style-type: none;
+            color: #000;
+        }
+
+        .courses li::before,
+        .skills li::before {
+            content: '✓  ';
+        }
+
+        .main-body {
+            color: #000;
+            flex: 8;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            padding: 8px 13px;
+            line-height: 1.6rem;
+
+        }
+
+        .main-body h2 {
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .skills {
+            height: auto;
+            width: 100%;
+        }
+
+        .work-headers {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .dates,
+        .location {
+            flex: 6;
+
+        }
+
+        .dates span,
+        .location span {
+            margin-right: 10px;
+
+        }
+
+        .work-experiance li::before {
+            content: '●';
+            margin: 0 5px;
+        }
+
+        @media screen and (max-width:600px) {
+
+            .body-wraper {
+                flex-direction: column;
+                border: medium;
+                overflow-x: hidden;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="body-wraper">
+        <div class="side-bar">
+            <div class="header">
+                <h1>Surafel Kassa</h1>
+                <h2>Full stack web and mobile App developer</h2>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li>
+                        <span class="socialIcon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="iconContent">picolo.sur@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="socialIcon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="iconContent">+1 408-417-6580</span>
+                    </li>
+                    <li>
+                        <span class="socialIcon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="iconContent">San Jose, California, USA</span>
+                    </li>
+                    <li>
+                        <span class="socialIcon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="iconContent">https://www.portfolio.kas-websolutions.dev</span>
+                    </li>
+
+                    <li>
+                        <span class="socialIcon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="iconContent">linkedin.com/in/surafel-kassa</span>
+                    </li>
+                    <li>
+                        <span class="socialIcon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                        <span class="iconContent">github.com/surafel9</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <div class="education-recent">
+                    <p>Nucamp Coding School</p>
+                    <p>–Full stack web and mobile development</p>
+                    <p>2021-2022</p>
+                </div>
+                <div class="courses">
+                    <h3>Additional courses</h3>
+                    <ul>
+                        <li>Harvard-Online/CS50<span> – Introduction to computer science, web development</span></li>
+                        <li>Frontend Masters<span> – Intermidate React, Javascript hardparts, OOP, Asynchronous
+                                Javascript, Javascript Foundations</span></li>
+                        <li>Coursera<span> – Pyhthon for everybody</span></li>
+                    </ul>
+
+                </div>
+                <div class="education-general">
+                    <h3>Previous Background</h3>
+                    <p>ITM-Belgium</p>
+                    <p>MSc </p>
+                    <p>Disease control</p>
+                    <p>2013-2015</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="main-body">
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Javascript; HTML; CSS; SASS ; Python; jQuery, C </li>
+                    <li>React.js; React-Native;Redux;Redux thunk; Async-thunk;</li>
+                    <li>MongoDB; Mongoose; Nodejs; Express; MYSQL</li>
+                    <li>Bootsrap; Git; github; Postman; Figma, Expo-go; Android-studio</li>
+                </ul>
+            </div>
+            <div class="career-objective">
+                <h2>Career Objective</h2>
+                <div class="goals">
+                    <p>Web developer with ability to learn and
+                        collaborate in team works while staying focused achieving desired outputs under strict
+                        deadlines. Worked through time
+                        sensitive personal and client projects through up-wrok.
+                        Eager to obtain a challenging position at a prestigous company that will expand my learning and
+                        build up on my developer skills.</p>
+                </div>
+            </div>
+            <div class="work-experiance">
+                <h2>Work Experiance</h2>
+                <h3>Freelance</h3>
+                <h4>Upwork/And independent projects</h4>
+                <div class="work-headers">
+                    <div class="dates">
+                        <span class="socialIcon"><i class="fa fa-calendar"></i></span><span>2021-2022</span>
+                    </div>
+
+                    <div class="location"><span class="socialIcon"><i class="fa fa-map-marker"
+                                aria-hidden="true"></i></span><span>Remote</span></div>
+                </div>
+                <ul>
+                    <li>Developed user interfaces with modern Javascript frameworks, HTML5, and CSS3</li>
+                    <li>Developed Object oriented code in Node.js and deployed to AWS. Created and populated mongo
+                        schemas, developed restful API and routes using express and mongoose.</li>
+                    <li>Designed and developed single page web applications using React. Successfully implemented react
+                        hooks, custom hooks, redux-thunk, asyncthunk using redux toolkit</li>
+                    <li>Successfully collaborated in debugging tasks.</li>
+                    <li>Identified, isolated and fixed mistakes. Implemented workarounds for problems</li>
+
+                </ul>
+                <h3>US Census</h3>
+                <h4>Tech support</h4>
+                <div class="work-headers">
+                    <div class="dates">
+                        <span class="socialIcon"><i class="fa fa-calendar"></i></span><span>2019-2021</span>
+                    </div>
+
+                    <div class="location"><span class="socialIcon"><i class="fa fa-map-marker"
+                                aria-hidden="true"></i></span><span>Sunnyvale</span></div>
+                </div>
+                <ul>
+                    <li>Configured new equipment and installed/upgraded hardware systems and application software
+                    </li>
+                    <li>Provided operational and technical support</li>
+                    <li>Supported in creating and delating users as appropriate, providing access rights to
+                        applications, files and system devices</li>
+                    <li>Troubleshoot and resoled problems.
+                        Initiated problem resolution procedures as necessary.</li>
+                </ul>
+
+                <ul>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
